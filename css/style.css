@@ -1,0 +1,289 @@
+@keyframes ball-x {
+	0% {
+		transform: translateX( 35px );
+		animation: ease-in;
+	}
+	5% {
+		transform: translateX( 100px );
+		animation: ease-out;
+	}
+	10% {
+		transform: translateX( 165px );
+		animation: ease-in;
+	}
+	15% {
+		transform: translateX( 230px );
+		animation: ease-out;
+	}
+	20% {
+		transform: translateX( 295px );
+		animation: ease-in;
+	}
+	25% {
+		transform: translateX( 360px );
+		animation: ease-out;
+	}
+	30% {
+		transform: translateX( 425px );
+		animation: ease-in;
+	}
+	35% {
+		transform: translateX( 490px );
+		animation: ease-out;
+	}
+	40% {
+		transform: translateX( 555px );
+		animation: ease-in;
+	}
+	45% {
+		transform: translateX( 555px );
+		animation: ease-in;
+	}
+	50% {
+		transform: translateX( 490px );
+		animation: ease-out;
+	}
+	55% {
+		transform: translateX( 425px );
+		animation: ease-in;
+	}
+	60% {
+		transform: translateX( 360px );
+		animation: ease-out;
+	}
+	65% {
+		transform: translateX( 295px );
+		animation: ease-in;
+	}
+	70% {
+		transform: translateX( 230px );
+		animation: ease-out;
+	}
+	75% {
+		transform: translateX( 165px );
+		animation: ease-in;
+	}
+	80% {
+		transform: translateX( 100px );
+		animation: ease-out;
+	}
+	85% {
+		transform: translateX( 35px );
+		animation: ease-in;
+	}
+	90% {
+		transform: translateX( 35px );
+		animation: ease-in;
+	}
+	95% {
+		transform: translateX( 35px );
+		animation: ease-in;
+	}
+	100% {
+		transform: translateX( 35px );
+	}
+}
+@keyframes ball-y {
+	0% {
+		transform: translateY( -300px );
+		animation: ease-out;
+	}
+	5% {
+		transform: translateY( -350px );
+		animation: ease-in;
+	}
+	10% {
+		transform: translateY( -250px );
+		animation: ease-out;
+	}
+	15% {
+		transform: translateY( -300px );
+		animation: ease-in;
+	}
+	20% {
+		transform: translateY( -200px );
+		animation: ease-out;
+	}
+	25% {
+		transform: translateY( -250px );
+		animation: ease-in;
+	}
+	30% {
+		transform: translateY( -150px );
+		animation: ease-out;
+	}
+	35% {
+		transform: translateY( -200px );
+		animation: ease-in;
+	}
+	40% {
+		transform: translateY( -100px );
+		animation: liner;
+	}
+	45% {
+		transform: translateY( -300px );
+		animation: ease-in;
+	}
+	50% {
+		transform: translateY( -350px );
+		animation: ease-in;
+	}
+	55% {
+		transform: translateY( -250px );
+		animation: ease-out;
+	}
+	60% {
+		transform: translateY( -300px );
+		animation: ease-in;
+	}
+	65% {
+		transform: translateY( -200px );
+		animation: ease-out;
+	}
+	70% {
+		transform: translateY( -250px );
+		animation: ease-in;
+	}
+	75% {
+		transform: translateY( -150px );
+		animation: ease-out;
+	}
+	80% {
+		transform: translateY( -200px );
+		animation: ease-in;
+	}
+	85% {
+		transform: translateY( -102px );
+		animation: linear;
+	}
+	100% {
+		transform: translateY( -300px );
+		
+	}
+}
+@keyframes step5 {
+	0% {
+		height: 50px;
+	}
+	40% {
+		height: 50px;
+	}
+	45% {
+		height: 250px;	
+	}
+	85% {
+		height: 250px;
+	}
+	100% {
+		height: 50px;
+	}
+}
+@keyframes step4 {
+	0% {
+		height: 100px;
+	}
+	40% {
+		height: 100px;
+	}
+	45% {
+		height: 200px;	
+	}
+	85% {
+		height: 200px;
+	}
+	100% {
+		height: 100px;
+	}
+}
+
+@keyframes step2 {
+	0% {
+		height: 200px;
+	}
+	40% {
+		height: 200px;
+	}
+	45% {
+		height: 100px;	
+	}
+	85% {
+		height: 100px;
+	}
+	100% {
+		height: 200px;
+	}
+}
+@keyframes step1 {
+	0% {
+		height: 250px;
+	}
+	40% {
+		height: 250px;
+	}
+	45% {
+		height: 50px;	
+	}
+	85% {
+		height: 50px;
+	}
+	100% {
+		height: 250px;
+	}
+}
+
+
+
+.box {
+	margin: 100px auto;
+	border: 2px solid #000;
+	width: 800px;
+	height: 500px;
+	padding-top: 150px;
+}
+.box__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: relative;
+	border-bottom: 2px solid black;
+	height: 300px;
+}
+path:hover {
+	fill: blue;
+}
+.ball-x {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	animation: ball-x 10s infinite;
+}
+.ball-y {
+	animation: ball-y 10s infinite;
+}
+.steps {
+	width: 70px;
+	margin: 0 29px 0 30px;
+	background-color: black;
+}
+.step_1 {
+	height: 250px;
+	animation: step1 10s linear infinite;
+}
+.step_2 {
+	height: 200px;
+	animation: step2 10s linear infinite;
+}
+.step_3 {
+	height: 150px;
+
+}
+.step_4 {
+	height: 100px;
+	animation: step4 10s linear infinite;
+}
+.step_5 {
+	height: 50px;
+	animation: step5 10s linear infinite;
+} 
+
