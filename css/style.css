@@ -1,74 +1,74 @@
 @keyframes ball-x {
 	0% {
-		transform: translateX( 35px );
+		transform: translateX( 35px ) rotate(0deg);
 		animation: ease-in;
 	}
 	5% {
-		transform: translateX( 100px );
+		transform: translateX( 100px ) rotate(45deg);
 		animation: ease-out;
 	}
 	10% {
-		transform: translateX( 165px );
+		transform: translateX( 165px ) rotate(90deg);
 		animation: ease-in;
 	}
 	15% {
-		transform: translateX( 230px );
+		transform: translateX( 230px ) rotate(135deg);
 		animation: ease-out;
 	}
 	20% {
-		transform: translateX( 295px );
+		transform: translateX( 295px ) rotate(180deg);
 		animation: ease-in;
 	}
 	25% {
-		transform: translateX( 360px );
+		transform: translateX( 360px ) rotate(225deg);
 		animation: ease-out;
 	}
 	30% {
-		transform: translateX( 425px );
+		transform: translateX( 425px ) rotate(270deg);
 		animation: ease-in;
 	}
 	35% {
-		transform: translateX( 490px );
+		transform: translateX( 490px ) rotate(315deg);
 		animation: ease-out;
 	}
 	40% {
-		transform: translateX( 555px );
+		transform: translateX( 555px ) rotate(360deg);
 		animation: ease-in;
 	}
 	45% {
-		transform: translateX( 555px );
+		transform: translateX( 555px ) rotate(360deg);
 		animation: ease-in;
 	}
 	50% {
-		transform: translateX( 490px );
+		transform: translateX( 490px ) rotate(315deg);
 		animation: ease-out;
 	}
 	55% {
-		transform: translateX( 425px );
+		transform: translateX( 425px ) rotate(270deg);
 		animation: ease-in;
 	}
 	60% {
-		transform: translateX( 360px );
+		transform: translateX( 360px ) rotate(225deg);
 		animation: ease-out;
 	}
 	65% {
-		transform: translateX( 295px );
+		transform: translateX( 295px ) rotate(180deg);
 		animation: ease-in;
 	}
 	70% {
-		transform: translateX( 230px );
+		transform: translateX( 230px ) rotate(135deg);
 		animation: ease-out;
 	}
 	75% {
-		transform: translateX( 165px );
+		transform: translateX( 165px ) rotate(90deg);
 		animation: ease-in;
 	}
 	80% {
-		transform: translateX( 100px );
+		transform: translateX( 100px ) rotate(45deg);
 		animation: ease-out;
 	}
 	85% {
-		transform: translateX( 35px );
+		transform: translateX( 35px ) rotate(0deg);
 		animation: ease-in;
 	}
 	90% {
@@ -121,7 +121,7 @@
 		animation: liner;
 	}
 	45% {
-		transform: translateY( -300px );
+		transform: translateY( -300px ) ;
 		animation: ease-in;
 	}
 	50% {
@@ -161,6 +161,16 @@
 		
 	}
 }
+
+@keyframes rotating{
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 @keyframes step5 {
 	0% {
 		height: 50px;
